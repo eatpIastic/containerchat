@@ -1,0 +1,7 @@
+{
+    "name": "containerchat",
+    "creator": "eatplastic",
+    "version": "0.0.1",
+    "entry": "index.js",
+    "description": "container chat module"
+  }
