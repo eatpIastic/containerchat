@@ -7,12 +7,12 @@ const GuiContainerCreative = Java.type("net.minecraft.client.gui.inventory.GuiCo
 const GuiRepair = Java.type("net.minecraft.client.gui.GuiRepair");
 const GuiScreen = Java.type("net.minecraft.client.gui.GuiScreen");
 const MathHelper = Java.type("net.minecraft.util.MathHelper");
+const JavaInteger = Java.type("java.lang.Integer");
 
 let historyBuffer = "";
 let sentHistoryCursor = -1;
 let inputField = undefined; // GuiTextField
 
-const JavaInteger = Java.type("java.lang.Integer");
 
 register("guiOpened", () => {
     let tempInputField = new GuiTextField(JavaInteger.valueOf(0), Renderer.getFontRenderer(), JavaInteger.valueOf(4), JavaInteger.valueOf(Math.floor(Renderer.screen.getHeight() * .5)), JavaInteger.valueOf(4), JavaInteger.valueOf(12));
